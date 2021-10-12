@@ -1,0 +1,297 @@
+/*================ IMPORTS ================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*================ VARIABLES ================*/
+:root {
+	/*================ COLORS ================*/
+	--background-color       :#F4F0E1;
+	--background-color-second:#A88771;
+	--background-color-accent:#F74700;
+	--background-color-alt   :#677662;
+	/* --background-image       :url("../images/background.png"); */
+
+	--text-color             :#2B3531;
+	--text-color-second      :#B53A25;
+	--text-color-accent      :#F74700;
+	--text-color-light       :#FFFFFF;
+	
+	/*================ FONT ================*/
+	--font-family           : 'Poppins';
+	
+	--font-size-normal      : 1rem;      /* 16px */
+	--font-size-small       : 0.75rem;   /* 12px */
+	--font-size-big         : 1.1875rem; /* 19px */
+	--font-size-xbig         : 1.5rem;   /* 24px */
+	
+	--font-weight-bold       : 700;
+	--font-weight-normal     : 400;
+	--font-weight-semi-normal: 500;
+	--font-weight-light      : 300;
+	--font-weight-lightest   : 200;
+
+
+}
+
+/*================ RESET HTML ================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*================ BODY BASICS ================*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: var(--font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*================ BASE ================*/
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+ul {
+	list-style: none;
+}
+
+/*================ HEADER & NAV ================*/
+.header {
+	margin: 3rem 0;
+	padding: 0 3rem;
+	width: 100%;
+}
+
+.nav-items {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-item:not(:first-child) {
+	padding-left: 2rem;
+}
+
+.nav-link {
+	font-size: var(--font-size-big);
+	font-weight: var(--font-weight-bold);
+	line-height: 1.15;
+
+	transition: color 300ms ease-out;
+}
+
+.nav-link:hover:not(.nav-drop-down .nav-link) {
+	color: var(--text-color-accent);
+}
+
+.nav-drop-down {
+	padding: 0.3rem 0;
+}
+
+.drop-span {
+	display: flex;
+	align-items: center;
+}
+
+.down-arrow {
+	width: 1.3rem;
+	padding-left: 0.2rem;
+}
+
+.nav-drop {
+	position: absolute;
+	overflow: hidden;
+
+	background-color: var(--background-color-second);
+	border-radius: 0 0 0.5rem 0.5rem;
+	
+	transform: scale(0);
+}
+
+.nav-drop-down:hover .nav-drop {
+	transform: scale(1);
+	transform: translateY(0.3rem);
+}
+
+.drop-item {
+	padding: 1rem;
+	
+	color: var(--text-color-light);
+	
+	transition: background-color 300ms ease-out;
+}
+
+.drop-item:hover {
+	background-color: var(--background-color-accent);
+}
+
+/*================ MAIN ================*/
+.main {
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+	text-align: center;
+	
+	width: 100%;
+	
+	background-image: var(--background-image);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.rotate-180 {
+	transform: rotate(180deg);
+}
+
+.main-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+.main-img {
+	max-width: 45rem;
+	height: auto;
+}
+
+.main-p {
+	color: var(--text-color-second);
+	
+	font-size: var(--font-size-normal);
+	cursor: default;
+}
+
+.button-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.button-section > img {
+	width: 8rem;
+}
+
+.button {
+	
+	margin: 0 2rem;
+	padding: 0.9rem 4rem;
+	
+	background-color: var(--background-color-accent);
+	border-radius: 100rem;
+	color: var(--text-color-light);
+}
+
+.button-lg {
+	font-size: var(--font-size-big);
+	font-weight: var(--font-weight-bold);
+	transition: box-shadow 300ms ease-out;
+}
+
+.button-lg:hover {
+	box-shadow: 5px 5px 5px gray;
+}
+
+
+/*================ COLLABORATORS ================*/
+.collaborators {
+	padding: 1rem;
+
+	background-color: var(--background-color-alt);
+	color: white;
+}
+
+.section-title {	
+	font-size: var(--font-size-xbig);
+	font-weight: var(--font-weight-semi-normal);
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2rem;
+	row-gap: 2rem;
+
+	padding: 1rem;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	
+	overflow: hidden;
+	padding: 1rem;
+	max-width: 400px;
+	
+	background-color: var(--text-color-second);
+	border-radius: 1rem;
+	cursor: pointer;
+	
+	transition: transform 300ms ease-out;
+}
+
+.card:hover {
+	transform: scale(1.03);
+}
+
+.card-img {
+	object-fit: cover;
+	border-radius: 100%;
+	height: 100px;
+	margin-right: 2rem;
+	width: 100px;
+}
+
+.colab-info {
+	font-size: var(--font-size-small);
+}
+
+.colab-items {
+	margin-top: 0.5rem;
+
+	list-style:circle;
+}
+
+/*================ FOOTER ================*/
+.footer {
+	margin: 1rem 0;
+
+	width: 100%;
+	height: 20rem;
+
+	background-image: url("../images/footer-light.png");
+	background-size: cover;
+	background-position: center;
+}
+
+/*================ PERSONALIZED STYLES ================*/
+img.right {
+	object-position: right;
+}
+
+img.left {
+	object-position: left;
+}
+
+img.top {
+	object-position: top;
+}
+
+img.bottom {
+	object-position: bottom;
+}
