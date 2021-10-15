@@ -74,11 +74,11 @@ ul {
 	justify-content: center;
 }
 
-.nav-item:not(:first-child) {
+.nav-item-1:not(:first-child) {
 	padding-left: 2rem;
 }
 
-.nav-link {
+.nav-links {
 	font-size: var(--font-size-big);
 	font-weight: var(--font-weight-bold);
 	line-height: 1.15;
@@ -216,6 +216,7 @@ ul {
 
 	background-color: var(--background-color-alt);
 	color: white;
+	height:30rem;
 }
 
 .section-title {	
@@ -234,7 +235,6 @@ ul {
 }
 
 .card {
-	display: flex;
 	align-items: center;
 	
 	overflow: hidden;
@@ -244,6 +244,8 @@ ul {
 	background-color: var(--text-color-second);
 	border-radius: 1rem;
 	cursor: pointer;
+	margin-top:2rem;
+	height:18rem;
 	
 	transition: transform 300ms ease-out;
 }
@@ -276,10 +278,13 @@ ul {
 
 	width: 100%;
 	height: 20rem;
-
-	background-image: url("../images/footer-light.png");
 	background-size: cover;
 	background-position: center;
+}
+.footer-img{
+
+	  width: 100%;
+	  height: 30rem;
 }
 
 /*================ PERSONALIZED STYLES ================*/
@@ -297,4 +302,80 @@ img.top {
 
 img.bottom {
 	object-position: bottom;
+}
+@media screen and (max-width:1920px ){
+	.collapse{
+		margin-left:32rem;
+	}
+}
+@media screen and (max-width:1800px ){
+	.collapse{
+		margin-left:25rem;
+	}
+}
+@media screen and (max-width:1600px ){
+	.collapse{
+		margin-left:20rem;
+	}
+}
+@media screen and (max-width:1400px ){
+	.collapse{
+		margin-left:18rem;
+	}
+}
+@media screen and (max-width:1366px ){
+	.collapse{
+		margin-left:14rem;
+	}
+}
+@media screen and (max-width:1280px ){
+	.collapse{
+		margin-left:8rem;
+	}
+}
+@media screen and (max-width:1040px){
+	.collapse{
+		margin-left:4rem;
+	}
+	.rotate-180{
+		display:none;
+	}
+	.main-right{
+		display:none;
+	}
+	.main-center{
+		margin-left:10rem;
+	}
+}
+@media screen and (max-width:990px){
+	.main-center{
+		margin-left:8rem;
+	}
+}
+@media screen and (max-width:910px){
+	.main-img{
+		max-width:32rem;
+		height:auto;
+	}
+	.main-center{
+		margin-left:8rem;
+	}
+}
+@media screen and (max-width: 800px){
+	.main-img{
+		max-width:30rem;
+		height:auto;
+	}
+	.main-center{
+		margin-left:6rem;
+	}
+}
+@media screen and (max-width:700px){
+	.main-img{
+       max-width:30rem;
+	   height: auto;
+	}
+	.main-center{
+		margin-left:2rem;
+	}
 }

@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- ================= Bootstrap CSS ================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
 	<!-- =================== FAVICON ======================= -->
 	<link rel="shortcut icon" href="https://hacktoberfest.digitalocean.com/favicon.ico" type="image/x-icon">
@@ -14,120 +19,156 @@
 </head>
 <body>
 	
-	<!-- =================== HEADER ======================= -->
-	<header class="header" id="header">
-		<nav class="nav">
-			<ul class="nav-items">
-				<li class="nav-item">
-					<a href="#" class="nav-link">Hacktoberfest</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Resources</a>
-				</li>
-				<li class="nav-item nav-drop-down">
-					<a href="#" class="nav-link">
-						<span class="drop-span">
-							Events
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="down-arrow"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-						</span>
-					</a>
-					<ul class="nav-drop">
-						<a href="#"><li class="drop-item">All Events</li></a>
-						<a href="#"><li class="drop-item">This Amazing Event</li></a>
-					</ul>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">GitHub</a>
-				</li>
-				<li class="nav-item">
-					<a href="#collaborators" class="nav-link">Collaborators</a>
-				</li>
-				<li class="nav-item">
-					<a href="#about-us" class="nav-link">About us</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <!--=====================  Navbar================================= -->
+         <header class="header">
+    				<nav class=" nav navbar navbar-expand-lg">
+  						<div class="container-fluid">
+    						<button class="navbar-toggler nav-drop-down" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border:2px solid white;position:relative;left:75%">
+      							<span>
+      								<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hf-icon.6b4a329.svg" style="height:50px;weight:50px;">
+      								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="down-arrow"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+      								<ul class="nav-drop">
+												<a href="#"><li class="drop-item">Hacktoberfest</li></a>
+												<a href="#"><li class="drop-item">Resources</li></a>
+												<a href="#"><li class="drop-item">Events</li></a>
+												<a href="#"><li class="drop-item">GitHub</li></a>
+												<a href="#"><li class="drop-item">Collaborators</li></a>
+												<a href="#"><li class="drop-item">About us</li></a>
+											</ul>
+      							</span>
+    						</button>
+    						<div class="collapse navbar-collapse">
+      							<ul class=" nav-items navbar-nav me-auto mb-2 mb-lg-0">
+        							<li class="nav-item-1">
+          							<a class="nav-links" href="#">Hacktoberfest</a>
+        							</li>
+        							<li class="nav-item-1">
+          							<a class="nav-links" href="#">Resources</a>
+        							</li>
+        							<li class="nav-item-1 nav-drop-down">
+												<a href="#" class="nav-links">
+													<span class="drop-span">
+															Events
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="down-arrow"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+													</span>
+												</a>
+												<ul class="nav-drop">
+													<a href="#"><li class="drop-item">All Events</li></a>
+													<a href="#"><li class="drop-item">This Amazing Event</li></a>
+												</ul>
+											</li>
+        							<li class="nav-item-1">
+          							<a class="nav-links" href="#">GitHub</a>
+        							</li>
+        							<li class="nav-item-1">
+          							<a class="nav-links" href="#collaborators">Collaborators</a>
+        							</li>
+        							<li class="nav-item-1">
+												<a href="#about-us" class="nav-links">About us</a>
+											</li>
+      							</ul>
+    						</div>
+  				</div>
+			</nav>
+		 </header>
+
+	<!-- ===================END OF HEADER ======================= -->
 	
 	<!-- =================== MAIN ======================= -->
 	<main class="main" id="main">
-		<div class="main-left rotate-180">
-			<img src="./assets/images/left.svg" alt="flowers">
-		</div>
-		<div class="main-center">
-			<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" alt="Hacktoberfest 2021 Logo" class="main-img">
-			<div class="main-wrapper">
-				<p class="main-p">Open source is changing the world – one contribution at a time.</p>
-				<div class="button-section">
-					<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg">
-					<a href="#collaborators" class="button button-lg">Start Hacking</a>
-					<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-right.2faed05.svg">
-				</div>
-			</div>
-		</div>
-		<div class="main-right">
-			<img src="./assets/images/right.svg" alt="flowers">
-		</div>
+						<div class="main-left rotate-180 ">
+								<img src="./assets/images/left.svg" alt="flowers">
+						</div>
+						<div class="main-center">
+								<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" alt="Hacktoberfest 2021 Logo" class="main-img">
+								<div class="main-wrapper">
+										<p class="main-p">Open source is changing the world – one contribution at a time.</p>
+												<div class="button-section">
+														<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg">
+																<a href="#collaborators" class="button button-lg">Start Hacking</a>
+																	<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-right.2faed05.svg">
+												</div>
+								</div>
+						</div>
+						<div class="main-right">
+							<img src="./assets/images/right.svg" alt="flowers">
+						</div>
 	</main>
 
 	<!-- =================== COLLABORATORS ======================= -->
 	<section class="collaborators" id="collaborators">
 		<h2 class="section-title">Awesome Collaborators!</h2>
-		<div class="grid cards-container">
-			<div class="card">
-				<img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/120937735_3308576542551917_806605866736435213_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGfjjKmGRsz--CoJskSc0hqt0kH4kWSoXW3SQfiRZKhddQBD2ndSc6xfBu8OrBT5rlL3_1zITj8yNJZwDZn02Q9&_nc_ohc=oemklxq7is8AX_rv_Ed&tn=SGlf8qgcTKhq9aV3&_nc_ht=scontent.fgdl3-1.fna&oh=7c7c6ebca0f0f54ac573835ec5089bd7&oe=6185031F" alt="Puppy Pic" class="card-img">
-				<div class="colab-info">
-					<h4 class="colab-name">Señor Perritou</h4>
-					<ul class="colab-items">
-						<li class="colab-item">Licenciado en ser cute 🐶</li>
-						<li class="colab-item">Oledor de traseros profesional 🐽</li>
-						<li class="colab-item">Patitas con olor a queso 🧀</li>
-					</ul>
+		<div class="container"><!--grid cards-container"-->
+			<div class="row">
+				<div class="col-md-3">
+						<div class="card">
+								<img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/120937735_3308576542551917_806605866736435213_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGfjjKmGRsz--CoJskSc0hqt0kH4kWSoXW3SQfiRZKhddQBD2ndSc6xfBu8OrBT5rlL3_1zITj8yNJZwDZn02Q9&_nc_ohc=oemklxq7is8AX_rv_Ed&tn=SGlf8qgcTKhq9aV3&_nc_ht=scontent.fgdl3-1.fna&oh=7c7c6ebca0f0f54ac573835ec5089bd7&oe=6185031F" alt="Puppy Pic" class="card-img">
+								<div class="colab-info">
+									<h4 class="colab-name">Señor Perritou</h4>
+									<ul class="colab-items">
+										<li class="colab-item">Licenciado en ser cute 🐶</li>
+										<li class="colab-item">Oledor de traseros profesional 🐽</li>
+										<li class="colab-item">Patitas con olor a queso 🧀</li>
+									</ul>
+								</div>
+						</div>
 				</div>
+        
+        <div class="col-md-3">
+						<div class="card">
+								<img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/242197469_1529829100726520_1558390963050297647_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEuLMPNKuw_9E5aiSel0bYw3OxOvmqWuXPc7E6-apa5c46tVRQTOllUJ2C31zS2ScO8wGwJLxFblyjz1LFb7oon&_nc_ohc=LceOTzthJbIAX-11r3A&tn=SGlf8qgcTKhq9aV3&_nc_ht=scontent.fgdl3-1.fna&oh=ad4e9f831688cc2a7d2e336b10b0b4f0&oe=6186C0AD" alt="Cesar" class="card-img">
+								<div class="colab-info">
+									<h4 class="colab-name">Cesar Codigo Bits</h4>
+									<ul class="colab-items">
+										<li class="colab-item">Líder de Byters 👨‍💻</li>
+										<li class="colab-item">Estudiante de Ingeniería en Sistemas Computacionales 🔢</li>
+										<li class="colab-item">Escritor en Talent Republic 📃</li>
+									</ul>
+								</div>
+						</div>
+				</div>
+        
+        <div class="col-md-3">
+						<div class="card">
+								<img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/167836256_3784545278277515_4744134289426240708_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEd6OYZOLR15YmwPpKIIAzn9YKPGS3-3If1go8ZLf7ch3Fcw7BmgEMumEIcv5dFu0E59fnPWxcGOUPBhxEvabw9&_nc_ohc=Luwvn29S7xYAX_VnMgJ&tn=SGlf8qgcTKhq9aV3&_nc_ht=scontent.fgdl3-1.fna&oh=35c017b5ab6700ffa9dd15e845ecce50&oe=61883243" alt="Ferro" class="card-img top">
+								<div class="colab-info">
+									<h4 class="colab-name">Rodolfo Ferro</h4>
+									<ul class="colab-items">
+											<li class="colab-item">Sherpa digital de IA 👨‍🏫</li>
+											<li class="colab-item">GDE in ML  🧠</li>
+											<li class="colab-item">Pythonista 🐍</li>
+									</ul>
+								</div>
+						</div>
 			</div>
-
-			<div class="card">
-				<img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/242197469_1529829100726520_1558390963050297647_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEuLMPNKuw_9E5aiSel0bYw3OxOvmqWuXPc7E6-apa5c46tVRQTOllUJ2C31zS2ScO8wGwJLxFblyjz1LFb7oon&_nc_ohc=LceOTzthJbIAX-11r3A&tn=SGlf8qgcTKhq9aV3&_nc_ht=scontent.fgdl3-1.fna&oh=ad4e9f831688cc2a7d2e336b10b0b4f0&oe=6186C0AD" alt="Cesar" class="card-img">
-				<div class="colab-info">
-					<h4 class="colab-name">Cesar Codigo Bits</h4>
-					<ul class="colab-items">
-						<li class="colab-item">Líder de Byters 👨‍💻</li>
-						<li class="colab-item">Estudiante de Ingeniería en Sistemas Computacionales 🔢</li>
-						<li class="colab-item">Escritor en Talent Republic 📃</li>
-					</ul>
-				</div>
+      
+      <div class="col-md-3">
+					<div class="card">
+						<img src="https://i.imgur.com/3FmZKuU.jpg" alt="Missa" class="card-img">
+							<div class="colab-info">
+								<h4 class="colab-name">Missael Barco</h4>
+								<ul class="colab-items">
+									<li class="colab-item">GitHub Campus Expert 🚩</li>
+									<li class="colab-item">Embajador León Joven ✨</li>
+									<li class="colab-item">Estudiante de Licenciatura en Física 🔭</li>
+								</ul>
+						</div>
+					</div>
 			</div>
-
-			<div class="card">
-				<img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/167836256_3784545278277515_4744134289426240708_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEd6OYZOLR15YmwPpKIIAzn9YKPGS3-3If1go8ZLf7ch3Fcw7BmgEMumEIcv5dFu0E59fnPWxcGOUPBhxEvabw9&_nc_ohc=Luwvn29S7xYAX_VnMgJ&tn=SGlf8qgcTKhq9aV3&_nc_ht=scontent.fgdl3-1.fna&oh=35c017b5ab6700ffa9dd15e845ecce50&oe=61883243" alt="Ferro" class="card-img top">
-				<div class="colab-info">
-					<h4 class="colab-name">Rodolfo Ferro</h4>
-					<ul class="colab-items">
-						<li class="colab-item">Sherpa digital de IA 👨‍🏫</li>
-						<li class="colab-item">GDE in ML  🧠</li>
-						<li class="colab-item">Pythonista 🐍</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="card">
-				<img src="https://i.imgur.com/3FmZKuU.jpg" alt="Missa" class="card-img">
-				<div class="colab-info">
-					<h4 class="colab-name">Missael Barco</h4>
-					<ul class="colab-items">
-						<li class="colab-item">GitHub Campus Expert 🚩</li>
-						<li class="colab-item">Embajador León Joven ✨</li>
-						<li class="colab-item">Estudiante de Licenciatura en Física 🔭</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- =================== ABOUT US ======================= -->
-	<footer class="footer" id="about-us">
+		<footer class="footer" id="about-us">
+      <img class="footer-img"src="assets/images/footer-light.png">
+		</footer>
+  
 
-	</footer>
+
+
+  <!--===================== Option 1: Bootstrap Bundle with Popper ============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
