@@ -45,5 +45,13 @@ The project is a web page that contains cards with the information of each colla
 - Commit & push changes to your repository.
 - Finally open a pull request with your name and changes to this repository.
 
-## Important ⚠
-Remember to put an online link for your photo, local photos wont be accepted!
+### Result
+
+As you can see, each card is arranged neatly, making the page look too attractive.
+
+![image](https://user-images.githubusercontent.com/52447471/137552939-320aecf9-85d8-41d9-9b2c-c6632dd72663.png)
+
+
+### Important ⚠
+- Remember to put an online link for your photo, local photos wont be accepted!
+- Please, don't modify the color palette 
