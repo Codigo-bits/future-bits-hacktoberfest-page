@@ -330,7 +330,7 @@ img.bottom {
 		align-items: center;
 		margin-right: 0;
 		background-color: var(--background-color);
-		position: fixed;
+		position: absolute;
 		top: 3.75rem;
 		width: 100vw;
 		height: cal(100%-60px);
