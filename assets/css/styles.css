@@ -316,14 +316,20 @@ img.bottom {
 /*================ RESPONSIVE DESIGN================*/
 
 @media (max-width: 689px){
-	.body{
-		padding-top: 4.375rem;
-	}
+
 
 	.header {
 		margin: 0;
-		padding: 0
+		padding: 0;
 	}
+
+	.sticky {
+		position: fixed;
+		width: 100%;
+		background-color: var(--background-color);
+	  }
+
+	.main-center{padding-top: 4.062rem;}
 
 	.nav-items {
 		flex-direction: column;
@@ -336,7 +342,7 @@ img.bottom {
 		height: cal(100%-60px);
 		overflow-y: auto;
 		left: 100%;
-		transition: left 0.3s;
+		transition: left 0.3s;	
 	}
 
 	.nav-toggle{display: block;}
